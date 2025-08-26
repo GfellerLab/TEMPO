@@ -4,17 +4,18 @@
 
 ## Overview
 
-**TEMPO** – a motif-based predictor of TCR–epitope interactions – estimates whether a T-cell receptor (TCR) can recognize a given epitope (a peptide presented by a specific MHC allele). The prediction is based on scoring V-gene, J-gene, and CDR3 features against a pre-computed motif model. For each input TCR, the tool outputs:
+**TEMPO** is a motif-based predictor that estimates whether a T-cell receptor (TCR) can recognize a given epitope (a peptide presented by a specific MHC allele). Predictions are made by scoring V-gene, J-gene, and CDR3 features against pre-computed motif models. For each input TCR, the tool outputs:
 
 - **`perc_rank`** – percentile rank (lower = stronger binder)
 - **`problem`**    – quality‑control flags (gene name typos, non‑AA symbols, etc.)
 
-By default **both α and β chains** are evaluated (`--chain AB`). Use `--chain A` or `--chain B` to score a single chain.
+By default **both α and β chains** are evaluated (`--chain AB`). You can restrict scoring to a single chain with `--chain A` or `--chain B`.
 
-Simply download the TEMPO executable for your machine architecture, and you are ready to use it.
+Download the TEMPO archive (ZIP or tar.gz) for your platform, extract it, and you are ready to run the tool.
 
 ## Quick Start 
 
+Here are a few common commands to get started:
 ```bash
 # See which epitope motif models are available 
 ./TEMPO list_epitopes
@@ -34,12 +35,12 @@ Simply download the TEMPO executable for your machine architecture, and you are 
     `./TEMPO predict <input_tcr_file.csv> <output_predictions.csv> <epitope_model> [options]
 `     
 -   **Epitope motif models** use the format: `HLAallele_epitopeSequence`  
-    Example: `A0201_LLWNGPMAV` → the epitope **LLWNGPMAV** presented by **HLA-A*02:01**.
+    Example: `A0201_LLWNGPMAV` → the epitope **LLWNGPMAV** presented by the **HLA-A*02:01** allele.
     
--   **TCR input file headers** must match exactly (case-sensitive):
-    -   Dual-chain (`AB`): `cdr3_TRA,TRAV,TRAJ,cdr3_TRB,TRBV,TRBJ`
-    -   Single-chain (`A`): `cdr3_TRA,TRAV,TRAJ`        
-    -   Single-chain (`B`): `cdr3_TRB,TRBV,TRBJ`
+-   The **TCR input file must contain the following column names** exactly as written (case-sensitive). The order of columns does not matter.
+    -   Both chains (AB): cdr3_TRA, TRAV, TRAJ, cdr3_TRB, TRBV, TRBJ
+    -   Alpha chain only (A): cdr3_TRA, TRAV, TRAJ
+    -   Beta chain only (B): cdr3_TRB, TRBV, TRBJ
     
 - **Species selection**: two species are supported — `HomoSapiens` (default) and `MusMusculus`.  
   Use `--species <NAME>` to select the species (affects gene lists, QC, and model availability).  
