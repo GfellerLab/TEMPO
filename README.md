@@ -215,20 +215,8 @@ By default, sequences with QC failures are **skipped**. To override this behavio
 
 ## Citation and License
 
-<<<<<<< HEAD
-> **Liu et al.**  
-> *Key determinants of T-cell epitope recognition revealed by TCR specificity profiles*
-=======
 To cite TEMPO, please refer to **Liu et al. Key determinants of T cell epitope recognition revealed by TCR specificity profiles.**
->>>>>>> b9d4e31 (Updated Citation and License)
 
 TEMPO is freely available for academic users.
 
-<<<<<<< HEAD
-## License
-
-Free of charge for academic users. See attached license for commercial usage.
-=======
-Private companies should contact Nadette Bulgin (nbulgin@lcr.org) at the Ludwig institute for Cancer Research for commercial licenses.
->>>>>>> b9d4e31 (Updated Citation and License)
-
+Private companies should contact Nadette Bulgin (nbulgin@lcr.org) at the Ludwig institute for Cancer Research for commercial licenses. See attached license for commercial usage.
