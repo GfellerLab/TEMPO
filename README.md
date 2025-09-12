@@ -50,7 +50,7 @@ Here are a few common commands to get started:
     
 - **Species selection**: two species are supported — `HomoSapiens` (default) and `MusMusculus`.  
   Use `--species <NAME>` to select the species (affects gene lists, QC, and model availability).  
-  Example (mouse): `./TEMPO predict input.csv out.csv H2Kb_SIINFEKL --species MusMusculus`
+  Example (mouse): `./TEMPO predict input.csv out.csv H2-Ab_DIYKGVYQFKSV --species MusMusculus`
 
 ## Command‑Line Reference
 
@@ -213,13 +213,22 @@ By default, sequences with QC failures are **skipped**. To override this behavio
 
 ---
 
-## Citation
+## Citation and License
 
+<<<<<<< HEAD
 > **Liu et al.**  
 > *Key determinants of T-cell epitope recognition revealed by TCR specificity profiles*
+=======
+To cite TEMPO, please refer to **Liu et al. Key determinants of T cell epitope recognition revealed by TCR specificity profiles.**
+>>>>>>> b9d4e31 (Updated Citation and License)
 
+TEMPO is freely available for academic users.
 
+<<<<<<< HEAD
 ## License
 
 Free of charge for academic users. See attached license for commercial usage.
+=======
+Private companies should contact Nadette Bulgin (nbulgin@lcr.org) at the Ludwig institute for Cancer Research for commercial licenses.
+>>>>>>> b9d4e31 (Updated Citation and License)
 
