@@ -1,10 +1,10 @@
 
-# TEMPO –  *T*CR–*E*pitope *M*otif‑based *P*redictor *O*f interactions
+# TEMPO –  *T*CR–*E*pitope *M*otif‑based interaction *P*redict*O*r
 
 
 ## Overview
 
-**TEMPO** is a motif-based predictor that estimates whether a T-cell receptor (TCR) can recognize a given epitope (a peptide presented by a specific MHC allele). Predictions are made by scoring V-gene, J-gene, and CDR3 features against pre-computed motif models. For each input TCR, the tool outputs:
+**TEMPO** is a predictor that estimates whether a T-cell receptor (TCR) can recognize a given epitope (i.e., a peptide presented by a specific MHC allele). Predictions are made by scoring V-gene, J-gene, and CDR3 features against pre-computed motif models. For each input TCR, the tool outputs:
 
 - **`perc_rank`** – percentile rank (lower = stronger binder)
 - **`problem`**    – quality‑control flags (gene name typos, non‑AA symbols, etc.)
@@ -12,6 +12,12 @@
 By default **both α and β chains** are evaluated (`--chain AB`). You can restrict scoring to a single chain with `--chain A` or `--chain B`.
 
 Download the TEMPO archive (ZIP or tar.gz) for your platform, extract it, and you are ready to run the tool.
+
+The product is provided free of charge, and, therefore, on an "as is" basis, without warranty of any kind.
+
+FOR-PROFIT USERS: If you plan to use TEMPO or any data provided with the script in any for-profit application, you are required to obtain a separate license. To do so, please contact Nadette Bulgin (nbulgin@lcr.org) at the Ludwig Institute for Cancer Research Ltd.
+
+If you use TEMPO in a publication, please cite: Liu et al. Key determinants of T cell epitope recognition revealed by TCR specificity profiles (2025)
 
 ## Quick Start 
 
@@ -209,11 +215,11 @@ By default, sequences with QC failures are **skipped**. To override this behavio
 
 ## Citation
 
-> **XXX**  
-> *TEMPO: motif‑based prediction of TCR–epitope recognition.*
+> **Liu et al.**  
+> *Key determinants of T-cell epitope recognition revealed by TCR specificity profiles*
 
 
 ## License
 
-MIT for academic use. Commercial users: contact **[XX@XX.org](mailto:XX@XX.org)**.
+Free of charge for academic users. See attached license for commercial usage.
 
