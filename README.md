@@ -213,6 +213,10 @@ By default, sequences with QC failures are **skipped**. To override this behavio
 
 ---
 
+## Contact
+
+For scientific question, contact David Gfeller at david.gfeller@unil.ch
+
 ## Citation and License
 
 To cite TEMPO, please refer to **Liu et al. Key determinants of T cell epitope recognition revealed by TCR specificity profiles.**
